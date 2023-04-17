@@ -1,0 +1,2 @@
+id, dx, dy, Asites, Csites, basis, n_meas_start, n_meas_end, n_meas_step, nsim, type
+1-30, 10, 10, (1 j 1 1), (1 j 2+i 2+i), y, len(Bsites)%4, len(Bsites), 4, 100

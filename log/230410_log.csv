@@ -1,0 +1,5 @@
+id, dx, dy, Asites, Csites, basis, n_meas_start, n_meas_end, n_meas_step, nsim, type
+1-30, 10, 10, (1 j 1 1), (1 j 2+i 2+i), y, len(Bsites)%4, len(Bsites), 4, 100, toric j=[1 2 4 6 8 10]
+31-60, 10, 10, (1 j 1 1), (1 j 2+i 2+i), z, len(Bsites)%4, len(Bsites), 4, 100, toric j=[1 2 4 6 8 10]
+61-85, 10, 10, (1 j 1 1), (1 j 2+i 2+i), y, len(Bsites)%4, len(Bsites), 4, 100, toric j=[2 4 6 8 10]
+86-110, 10, 15, (1 j 1 1), (1 j 2+i 2+i), y, len(Bsites)%4, len(Bsites), 4, 100, toric j=[2 4 6 8 10]

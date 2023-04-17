@@ -1,0 +1,31 @@
+id, dx, dy, Asites, Csites, basis, n_meas_start, n_meas_end, n_meas_step, nsim, type
+1-5, 10, 10, diag(1 3 3 true), diag(1+i 3+i 3 true), y, len(Bsites)%4, len(Bsites), 4, 1000, toric
+6-10, 10, 10, diag(1 3 3 true), diag(1+i 3+i max true), y, len(Bsites)%4, len(Bsites), 4, 1000, toric
+11-15, 10, 10, (1 6 1 1), (1 6 2+i 2+i), y, len(Bsites)%4, len(Bsites), 4, 1000, toric
+16-20, 10, 10, (1 3 1 1), (1 3 2+i 2+i), y, len(Bsites)%4, len(Bsites), 4, 100, toric
+21-25, 10, 10, (1 4 1 1), (1 4 2+i 2+i), y, len(Bsites)%4, len(Bsites), 4, 100, toric
+26-30, 10, 10, (1 5 1 1), (1 5 2+i 2+i), y, len(Bsites)%4, len(Bsites), 4, 100, toric
+31-35, 10, 10, diag(1 1 1 true), diag(1+i 1+i 1 true), y, len(Bsites)%4, len(Bsites), 4, 100, toric
+36-40, 10, 10, diag(1 2 2 true), diag(1+i 2+i 2 true), y, len(Bsites)%4, len(Bsites), 4, 100, toric
+41-45, 10, 10, diag(1 3 3 true), diag(1+i 3+i 3 true), y, len(Bsites)%4, len(Bsites), 4, 100, toric
+46-50, 10, 10, diag(1 4 4 true), diag(1+i 4+i 4 true), y, len(Bsites)%4, len(Bsites), 4, 100, toric
+51-55, 10, 10, diag(1 5 5 true), diag(1+i 5+i 5 true), y, len(Bsites)%4, len(Bsites), 4, 100, toric
+56-60, 10, 10, (1 1 1 1), (1 1 2+i 2+i), y, len(Bsites)%2, len(Bsites), 2, 100, cluster
+61-65, 10, 10, (1 2 1 1), (1 2 2+i 2+i), y, len(Bsites)%2, len(Bsites), 2, 100, cluster
+66-70, 10, 10, (1 4 1 1), (1 4 2+i 2+i), y, len(Bsites)%2, len(Bsites), 2, 100, cluster
+71-75, 10, 10, (1 6 1 1), (1 6 2+i 2+i), y, len(Bsites)%2, len(Bsites), 2, 100, cluster
+76-80, 10, 10, (1 8 1 1), (1 8 2+i 2+i), y, len(Bsites)%2, len(Bsites), 2, 100, cluster
+81-85, 10, 10, (1 10 1 1), (1 10 2+i 2+i), y, len(Bsites)%2, len(Bsites), 2, 100, cluster
+86-115, 10, 10, (1 j 1 1), (1 j 2+i 2+i), z, len(Bsites)%2, len(Bsites), 2, 100, cluster j=[1 2 4 6 8 10]
+116-145, 10, 10, (1 j 1 1), (1 j 2+i 2+i), x, len(Bsites)%2, len(Bsites), 2, 100, cluster j=[1 2 4 6 8 10]
+146-175, 10, 10, (1 j 1 1), (1 j 2+i 2+i), z, len(Bsites)%2, len(Bsites), 2, 100, xzzx j=[1 2 4 6 8 10]
+176-205, 10, 10, (1 j 1 1), (1 j 2+i 2+i), x, len(Bsites)%2, len(Bsites), 2, 100, xzzx j=[1 2 4 6 8 10]
+206-235, 10, 10, (1 j 1 1), (1 j 2+i 2+i), x, len(Bsites)%2, len(Bsites), 2, 100, xzzx j=[1 2 4 6 8 10]
+236-240, 10, 10, diag(1 5 5 true), diag(1+i 5+i 5 false), z, len(Bsites)%4, len(Bsites), 4, 100, xzzx
+241-245, 10, 10, diag(1 5 5 true), diag(1+i 5+i 5 false), x, len(Bsites)%4, len(Bsites), 4, 100, xzzx
+246-250, 10, 10, diag(1 5 5 true), diag(1+i 5+i 5 false), y, len(Bsites)%4, len(Bsites), 4, 100, xzzx
+251-255, 10, 10, diag(1 5 5 true), diag(1+i 5+i 5 false), z, len(Bsites)%4, len(Bsites), 4, 100, cluster
+256-260, 10, 10, diag(1 5 5 true), diag(1+i 5+i 5 false), x, len(Bsites)%4, len(Bsites), 4, 100, cluster
+261-265, 10, 10, diag(1 5 5 true), diag(1+i 5+i 5 false), y, len(Bsites)%4, len(Bsites), 4, 100, cluster
+266-273, 20, 20, diag(1 10 10 true), diag(1+i 10+i 10 false), z, len(Bsites)%4, len(Bsites), 4, 100, cluster
+274-280, 20, 20, diag(1 10 10 true), diag(1+i 10+i 10 false), y, len(Bsites)%4, len(Bsites), 4, 100, cluster

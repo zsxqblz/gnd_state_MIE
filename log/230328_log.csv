@@ -1,0 +1,29 @@
+id, dx, dy, Asites, Csites, basis, n_meas_start, n_meas_end, n_meas_step, nsim, type
+1-10, 10, 10, (1 1 1 1), (2+i 2+i 2+i 2+i), y, 0, length(string), 1, 1000, toric measure string
+11-15, 10, 10, (1 1 1 1), (1 1 2+i 2+i), x/y/z, 0, length(string), 1, 1000, cluster measure string
+16-20, 10, 10, (1 1 1 1), (1+i 1+i 1+i 1+i), z, 0, 98, 2, 1000, cluster
+21-25, 10, 10, (1 1 1 1), (1+i 1+i 1+i 1+i), x, 0, 98, 2, 1000, cluster
+26-30, 10, 10, (1 1 1 1), (1+i 1+i 1+i 1+i), y, 0, 98, 2, 1000, cluster
+31-35, 10, 10, (1 1 1 1), (1+i 1+i 1+i 1+i), m, 0, 98, 2, 1000, cluster
+36-40, 10, 10, (1 1 1 1), (1 1 1+i 1+i), z, 0, 98, 2, 1000, cluster
+41-45, 10, 10, (1 1 1 1), (1 1 1+i 1+i), x, 0, 98, 2, 1000, cluster
+46-50, 10, 10, (1 1 1 1), (1 1 1+i 1+i), y, 0, 98, 2, 1000, cluster
+51-55, 10, 10, (1 1 1 1), (1 1 1+i 1+i), m, 0, 98, 2, 1000, cluster
+56-60, 10, 10, (1 10 1 1), (1 10 2+i 2+i), z, 0, len(Bsites), 2, 1000, cluster
+61-65, 10, 10, (1 10 1 1), (1 10 2+i 2+i), x, 0, len(Bsites), 2, 1000, cluster
+66-70, 10, 10, (1 10 1 1), (1 10 2+i 2+i), y, 0, len(Bsites), 2, 1000, cluster
+71-75, 10, 10, (1 10 1 1), (1 10 2+i 2+i), m, 0, len(Bsites), 2, 1000, cluster
+76-80, 10, 10, (1 10 1 1), (1 10 2+i 2+i), z, len(Bsites)%4, len(Bsites), 4, 1000, toric y
+81-85, 10, 10, (1 10 1 1), (1 10 2+i 2+i), x, len(Bsites)%4, len(Bsites), 4, 1000, toric y
+86-90, 10, 10, (1 10 1 1), (1 10 2+i 2+i), y, len(Bsites)%4, len(Bsites), 4, 1000, toric y
+91-95, 10, 10, (1 10 1 1), (1 10 2+i 2+i), m, len(Bsites)%4, len(Bsites), 4, 1000, toric y
+96-100, 10, 10, (1 10 1 1), (1 10 2+i 2+i), z, len(Bsites)%4, len(Bsites), 4, 1000, toric xz bell
+101-105, 10, 10, (1 10 1 1), (1 10 2+i 2+i), y, len(Bsites)%4, len(Bsites), 4, 1000, toric xz bell
+105-110, 10, 10, (1 9 1 1), (1 9 2+i 2+i), y, len(Bsites)%4, len(Bsites), 4, 1000, toric xz bell
+111-115, 10, 10, (1 9 1 1), (1 9 2+i 2+i), y, len(Bsites)%4, len(Bsites), 4, 1000, forgotten
+116-120, 10, 10, (1 10 1 1), (1 10 1+i 1+i), z, len(Bsites)%4, len(Bsites), 4, 1000, xzzx
+121-125, 10, 10, (1 10 1 1), (1 10 1+i 1+i), x, len(Bsites)%4, len(Bsites), 4, 1000, xzzx
+126-130, 10, 10, (1 10 1 1), (1 10 1+i 1+i), y, len(Bsites)%4, len(Bsites), 4, 1000, xzzx
+131-135, 10, 10, (1 10 1 1), (1 10 1+i 1+i), z, len(Bsites)%4, len(Bsites), 4, 1000, xzzx bell
+136-140, 10, 10, (1 10 1 1), (1 10 1+i 1+i), x, len(Bsites)%4, len(Bsites), 4, 1000, xzzx bell
+141-145, 10, 10, (1 10 1 1), (1 10 1+i 1+i), y, len(Bsites)%4, len(Bsites), 4, 1000, xzzx bell
