@@ -92,20 +92,6 @@ function genXZZXCode(dx::Int64,dy::Int64)
     canonicalize!(s)
 
     # string of x and z horizontally
-    # for i in 1:min(dx,dy)
-    #     coorx = 2*i-1
-    #     coory = 2*i-1
-    #     idx = xzzxCoor2Idx([coorx-1,coory],dx,dy)
-    #     s[end-1,idx] = (true,false)
-    #     idx = xzzxCoor2Idx([coorx,coory+1],dx,dy)
-    #     s[end-1,idx] = (false,true)
-    #     idx = xzzxCoor2Idx([coorx+1,coory],dx,dy)
-    #     s[end,idx] = (false,true)
-    #     idx = xzzxCoor2Idx([coorx,coory-1],dx,dy)
-    #     s[end,idx] = (true,false)
-    # end
-
-    # bell state
     for i in 1:min(dx,dy)
         coorx = 2*i-1
         coory = 2*i-1
@@ -119,18 +105,32 @@ function genXZZXCode(dx::Int64,dy::Int64)
         s[end,idx] = (true,false)
     end
 
-    for i in 1:min(dx,dy)
-        coorx = 2*dx-2*i+1
-        coory = 2*i-1
-        idx = xzzxCoor2Idx([coorx+1,coory],dx,dy)
-        s[end-1,idx] = (true,false)
-        idx = xzzxCoor2Idx([coorx,coory+1],dx,dy)
-        s[end-1,idx] = (false,true)
-        idx = xzzxCoor2Idx([coorx-1,coory],dx,dy)
-        s[end,idx] = (false,true)
-        idx = xzzxCoor2Idx([coorx,coory-1],dx,dy)
-        s[end,idx] = (true,false)
-    end
+    # bell state
+    # for i in 1:min(dx,dy)
+    #     coorx = 2*i-1
+    #     coory = 2*i-1
+    #     idx = xzzxCoor2Idx([coorx-1,coory],dx,dy)
+    #     s[end-1,idx] = (true,false)
+    #     idx = xzzxCoor2Idx([coorx,coory+1],dx,dy)
+    #     s[end-1,idx] = (false,true)
+    #     idx = xzzxCoor2Idx([coorx+1,coory],dx,dy)
+    #     s[end,idx] = (false,true)
+    #     idx = xzzxCoor2Idx([coorx,coory-1],dx,dy)
+    #     s[end,idx] = (true,false)
+    # end
+
+    # for i in 1:min(dx,dy)
+    #     coorx = 2*dx-2*i+1
+    #     coory = 2*i-1
+    #     idx = xzzxCoor2Idx([coorx+1,coory],dx,dy)
+    #     s[end-1,idx] = (true,false)
+    #     idx = xzzxCoor2Idx([coorx,coory+1],dx,dy)
+    #     s[end-1,idx] = (false,true)
+    #     idx = xzzxCoor2Idx([coorx-1,coory],dx,dy)
+    #     s[end,idx] = (false,true)
+    #     idx = xzzxCoor2Idx([coorx,coory-1],dx,dy)
+    #     s[end,idx] = (true,false)
+    # end
 
     # y state
     # for ix = 1:dx
