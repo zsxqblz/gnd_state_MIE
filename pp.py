@@ -2,20 +2,19 @@ import numpy as np
 from tqdm import tqdm
 import os.path
 
-for idx in range(10,11):
-    file_name = "data/230416/230416_n%d_"%(idx)
+for idx in range(601,701):
+    file_name = "data/230419/230419_n%d_"%(idx)
 
     job_arr_start = 0
-    job_arr_end = 50
+    job_arr_end = 10
     job_arr_step = 1
     job_arr_l = np.arange(job_arr_start,job_arr_end,job_arr_step)
 
     cnt = 0
-
     for job_id in tqdm(job_arr_l):
         job_name = file_name + str(job_id)
         if os.path.isfile(job_name+"_cmi.csv") == False:
-            print(job_id)
+            print(idx, job_id)
             continue
 
         if cnt == 0:
@@ -41,4 +40,5 @@ for idx in range(10,11):
     mi_l = mi_l / cnt
     ci_l = ci_l / cnt
 
-    np.savez(file_name+"pp.npz",n_meas_l=n_meas_l,cmi_l=cmi_l,mi_l=mi_l,ci_l=ci_l)
+    if cnt > 0:
+        np.savez(file_name+"pp.npz",n_meas_l=n_meas_l,cmi_l=cmi_l,mi_l=mi_l,ci_l=ci_l)

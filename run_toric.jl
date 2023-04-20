@@ -14,8 +14,10 @@ let
     # 1 = diagonal
     mode = parse(Int64,ARGS[6])
     n_meas_step = parse(Int64,ARGS[7])
-    nsim = parse(Int64,ARGS[8])
-    file_name = ARGS[9]
+    #0=x, 1=y, 2=z
+    meas_basis = parse(Int64,ARGS[8])
+    nsim = parse(Int64,ARGS[9])
+    file_name = ARGS[10]
 
     reg = genToricCode(dx,dy)
     allArr = collect(1:2*dx*dy)
@@ -52,7 +54,13 @@ let
     @showprogress for (i,n_meas) in enumerate(n_meas_l)
         for j in 1:nsim
             treg = deepcopy(reg)
-            randYMeasB(treg,BsitesArr,n_meas)
+            if meas_basis == 0
+                randXMeasB(treg,BsitesArr,n_meas)
+            elseif meas_basis == 1
+                randYMeasB(treg,BsitesArr,n_meas)
+            elseif meas_basis == 2
+                randZMeasB(treg,BsitesArr,n_meas)
+            end
             cmi_l[i] = cmi_l[i] + cmi(treg,AsitesArr,BsitesArr,CsitesArr)
             mi_l[i] = mi_l[i] + mi(treg,AsitesArr,CsitesArr)
             ci_l[i] = ci_l[i] + ci(treg,AsitesArr,CsitesArr)
