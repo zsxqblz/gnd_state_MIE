@@ -2,11 +2,11 @@ import numpy as np
 from tqdm import tqdm
 import os.path
 
-for idx in range(601,701):
+for idx in range(751,901):
     file_name = "data/230419/230419_n%d_"%(idx)
 
     job_arr_start = 0
-    job_arr_end = 10
+    job_arr_end = 1
     job_arr_step = 1
     job_arr_l = np.arange(job_arr_start,job_arr_end,job_arr_step)
 
